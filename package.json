@@ -1,0 +1,26 @@
+{
+  "name": "@grammeaway/pi-first-prompt",
+  "version": "1.0.0",
+  "description": "Pi agentic harness extension: /first-prompt shows the session's initial prompt for reuse, copyable via pi-clip",
+  "type": "module",
+  "keywords": ["pi", "pi-extension", "prompt", "reuse", "loop", "pi-clip", "pi-package"],
+  "license": "MIT",
+  "author": "Victor Gram Thomsen <victor@guramusoftware.com>",
+  "repository": { "type": "git", "url": "git+https://github.com/grammeaway/pi-first-prompt" },
+  "bugs": { "url": "https://github.com/grammeaway/pi-first-prompt/issues" },
+  "homepage": "https://github.com/grammeaway/pi-first-prompt#readme",
+  "files": ["index.ts", "README.md", "LICENSE"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.79.0",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-tui": "^0.87.1"
+  }
+}
